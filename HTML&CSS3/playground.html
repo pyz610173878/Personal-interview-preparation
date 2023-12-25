@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <div class="box1"></div>
+    <div class="parent">
+        123
+        <div class="child">
+我是子元素
+        </div>
+    </div>
+
+    <div class="parent1">
+        123
+        <div class="child1">
+123
+        </div>
+    </div>
+</body>
+
+<style>
+    body {
+            font-size: 16px; /* 根元素的字体大小 */
+        }
+
+    .parent {
+        width: 500px;
+        height: 500px;
+        font-size: 2em;  /* 父元素的字体大小是根元素的两倍  32px*/
+        position: relative;
+        background-color: black;
+        margin-bottom: 100px;
+    }
+
+    .child {
+        width: 200px;
+        height: 200px;
+        font-size: 1em; /* 子元素的字体大小是相对于父元素的字体大小 */
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .parent1 {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        background-color: black;
+    }
+
+    .child1 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    }
+
+
+
+    .box1 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    }
+</style>
+
+</html>
